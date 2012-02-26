@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    	<script type="text/javascript" src="js/check.js"></script>
+        <title>RaumZeitLabor Merchandise</title>
+        <link href="css/main.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+    	<img src="images/logo.png" style="float: right;"/><h1>RaumZeitLabor Merchandise</h1><br/>
+    	<form method="POST" action="order.php">
+	        {% for item in items %}
+	        <div class="item">
+	        	<img src="images/{{ item.getImage() }}" style="float: left;"/>
+	            <h1>{{ item.getName() }}</h1><br/>
+	            {{ item.getDescription() }}<br/>
+	            
+	            <table class="sizeprice">
+	            <tr>
+		            <th>Größe</th>
+		            <th>Preis</th>
+		            <th>Anzahl</th>
+		        </tr>
+	            {% for sizeprice in item.getSizePrices() %}
+	            <tr>
+	            	<td>{{ sizeprice.getSize() }}</td>
+	            	<td>{{ sizeprice.getPrice() }} &euro;</td>
+	            	<td><input type="text" size="3" name="item[{{ item.getName() }}-{{ sizeprice.getSize() }}]"/></td>
+	            </tr>
+	            {% endfor %}
+	            </table>
+	        </div>
+	        {% endfor %}
+	        
+	        <div class="order">
+	        	<h1>Bestelldaten</h1>
+	        	<label for="name">Dein Name</label>
+	        	<input class="textfield" type="text" id="name" name="name" size="32" maxlength="255"/><br/>
+	        	
+	        	<label for="email">Deine E-Mail</label>
+	        	<input class="textfield" type="text" id="email" name="email" size="32" maxlength="255"/><br/>
+	        	
+	        	<label for="comments">Bemerkungen, Kommentare</label>
+	        	<textarea class="textarea" name="comments" id="comments"></textarea>
+	        </div>
+	        
+	        <input type="submit" onclick="return checkForm()" value="Bestellung los!"/>
+	    </form>
+    </body>
+</html>

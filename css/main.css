@@ -1,0 +1,33 @@
+.size {
+	display: block;
+	width: 40px;
+}
+
+.price {
+	display: block;
+	width: 80px;
+}
+
+table.sizeprice {
+	margin-top: 20px;
+}
+
+div.item {
+	overflow: auto;
+	margin-bottom: 10px;
+}
+
+input.textfield {
+	width: 300px;
+}
+
+.textarea {
+	width: 300px;
+	height: 100px;
+}
+
+label {
+	width: 180px;
+	vertical-align: top;
+	display: inline-block;
+}
