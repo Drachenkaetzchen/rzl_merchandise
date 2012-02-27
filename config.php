@@ -54,7 +54,7 @@ $items[] = $item;
 $item = new Item();
 $item->setName("Schürtze");
 $item->setDescription(	"Hoodie Hoodie Hoodie.");
-$item->setImage("schuertze.jpg");
+$item->setImage("schuerze.jpg");
 $item->addSizePrice(new SizePrice("XXL", 15.90));
 $item->addSizePrice(new SizePrice("XL", 14.90));
 $item->addSizePrice(new SizePrice("L", 13.90));
