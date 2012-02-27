@@ -26,6 +26,11 @@ input.textfield {
 	height: 100px;
 }
 
+.overview {
+	position: fixed;
+	margin-left: -200px;
+}
+
 label {
 	width: 180px;
 	vertical-align: top;

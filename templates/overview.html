@@ -1,0 +1,7 @@
+<div class="overview">
+{% for item in items %}
+	<a href="#{{ item.getNormalizedName() }}">{{ item.getName() }}</a><br/>
+{% endfor %}
+<br/>
+<a href="#endegelaende">Bestellung</a>
+</div>

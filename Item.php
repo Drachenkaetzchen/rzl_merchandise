@@ -43,6 +43,13 @@ class Item {
 	}
 	
 	/**
+	 * Returns a "normalized" name for use in e.g. anchors.
+	 */
+	public function getNormalizedName () {
+		return preg_replace('/[^a-zA-Z0-9\s]/', '', $this->name);
+	}
+	
+	/**
 	 * Sets the description of the item
 	 * @param string $description
 	 */
