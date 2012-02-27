@@ -1,4 +1,4 @@
-Hooray, jemand hat was im Shop bestellt:
+RaumZeitLabor Merchandise Shopbestellung
 
 Name: {{ name }}
 Mail: {{ email }}

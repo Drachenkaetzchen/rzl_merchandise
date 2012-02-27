@@ -5,6 +5,8 @@ Twig_Autoloader::register();
 $loader = new Twig_Loader_Filesystem('templates');
 $twig = new Twig_Environment($loader);
 
+include("config.php");
+
 /**
  * Contains the list of items to order. All orders are contained within the "item" key, and each subentry
  * contains the item and it's size as well as the order amount.
@@ -31,4 +33,7 @@ $headers .= "MIME-Version: 1.0\r\n";
 $headers .= "Content-type: text/plain; charset=utf-8\r\n";
 $headers .="Content-Transfer-Encoding: 8bit";
 
-mail("felicitus@felicitus.org", "RZL-Merchandise-Shop Bestellung", $mailtext, $headers);
+// targetMails is defined in config.php, gets appended with the order person's mail
+$targetMails[] = $_REQUEST["email"];
+
+mail($targetMails, "RZL-Merchandise-Shop Bestellung", $mailtext, $headers);
