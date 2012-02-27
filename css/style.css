@@ -6,7 +6,7 @@
 /* FF3.5+/Safari/Opera10 */
 @font-face {
   font-family:Topaz;
-  src: url(topaz1200dmg.ttf);
+  src: url(../topaz1200dmg.ttf);
 }
 
 html, body {
