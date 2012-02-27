@@ -1,7 +1,8 @@
-<div class="overview">
+<nav>
+<ul class="overview">
 {% for item in items %}
-	<a href="#{{ item.getNormalizedName() }}">{{ item.getName() }}</a><br/>
+	<li><a href="#{{ item.getNormalizedName() }}">{{ item.getName() }}</a></li>
 {% endfor %}
-<br/>
-<a href="#endegelaende">Bestellung</a>
-</div>
+<li class="margin-top: 10px;"><a href="#endegelaende">Bestellung</a></li>
+</ul>
+</nav>
