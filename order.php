@@ -5,7 +5,9 @@ Twig_Autoloader::register();
 $loader = new Twig_Loader_Filesystem('templates');
 $twig = new Twig_Environment($loader);
 
-include("config.php");
+require_once("SizePrice.php");
+require_once("Item.php");
+require_once("config.php");
 
 /**
  * Contains the list of items to order. All orders are contained within the "item" key, and each subentry
