@@ -52,7 +52,7 @@ $item->addSizePrice(new SizePrice("S", 11.90));
 $items[] = $item;
 
 $item = new Item();
-$item->setName("Schürtze");
+$item->setName("Schürze");
 $item->setDescription(	"Hoodie Hoodie Hoodie.");
 $item->setImage("schuertze.jpg");
 $item->addSizePrice(new SizePrice("XXL", 15.90));
