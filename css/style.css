@@ -58,3 +58,11 @@ p {
     font-weight: 400;
     text-align: justify;
 }
+
+nav ul {
+    list-style-image: url(../images/plug.png);
+}
+
+nav ul li {
+    margin: 5px 0;
+}
