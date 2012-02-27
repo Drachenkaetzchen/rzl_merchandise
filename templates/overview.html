@@ -1,3 +1,5 @@
+{# Dieses Template erzeugt die Navigation am linken Rand. #}
+
 <div class="overview">
 {% for item in items %}
 	<a href="#{{ item.getNormalizedName() }}">{{ item.getName() }}</a><br/>
