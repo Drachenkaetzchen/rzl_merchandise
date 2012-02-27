@@ -8,6 +8,7 @@ $twig = new Twig_Environment($loader);
 require_once("SizePrice.php");
 require_once("Item.php");
 require_once("config.php");
+require_once("functions.php");
 
 /**
  * Contains the list of items to order. All orders are contained within the "item" key, and each subentry
@@ -17,7 +18,7 @@ $orderItems = array();
 
 foreach ($_REQUEST["item"] as $key => $value) {
 	if ($value !== "") {
-		$orderItems[] = array("name" => str_pad($key, 30), "amount" => str_pad($value,4));
+		$orderItems[] = array("name" => mb_str_pad($key, 35), "amount" => mb_str_pad($value,4));
 	}
 }
 
