@@ -41,18 +41,15 @@ $items[] = $item;
 
 $item = new Item();
 $item->setName("Pfannenwender");
-$item->setDescription(	"Hoodie Hoodie Hoodie.");
+$item->setDescription(	"Diverse Pfannenwender");
 $item->setImage("pfannenwender.jpg");
-$item->addSizePrice(new SizePrice("XXL", 15.90));
-$item->addSizePrice(new SizePrice("XL", 14.90));
-$item->addSizePrice(new SizePrice("L", 13.90));
-$item->addSizePrice(new SizePrice("M", 12.90));
-$item->addSizePrice(new SizePrice("S", 11.90));
+$item->addSizePrice(new SizePrice("Pfannenwender mit Logo", 15.90));
+$item->addSizePrice(new SizePrice("Minecraft-Spaten", 14.90));
 
 $items[] = $item;
 
 $item = new Item();
-$item->setName("Schürtze");
+$item->setName("Schürze");
 $item->setDescription(	"Hoodie Hoodie Hoodie.");
 $item->setImage("schuerze.jpg");
 $item->addSizePrice(new SizePrice("XXL", 15.90));

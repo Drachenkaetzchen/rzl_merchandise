@@ -1,0 +1,13 @@
+RaumZeitLabor Merchandise Shopbestellung
+
+Name: {{ name }}
+Mail: {{ email }}
+
+Bestellung:
+
+{% for item in items %}
+{{ item.name }}: {{ item.amount }} Stück
+{% endfor %}
+
+Kommentare:
+{{ comments }}
