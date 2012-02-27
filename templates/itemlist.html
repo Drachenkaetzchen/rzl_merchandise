@@ -5,7 +5,7 @@
 		<img class="shadow" src="images/thumbs/{{ item.getImage() }}" style="float: left;"/>
 		<h1>{{ item.getName() }}</h1><br/>
 		{{ item.getDescription() }}<br/>
-         
+
 		<table class="sizeprice">
       		<tr>
        			<th>Größe</th>
@@ -16,7 +16,7 @@
        		{% for sizeprice in item.getSizePrices() %}
        		<tr>
        			<td>{{ sizeprice.getSize() }}</td>
-       			<td>{{ sizeprice.getPrice() }} &euro;</td>
+       			<td>{{ "%.2f"|format(sizeprice.getPrice()) }} &euro;</td>
        			<td><input type="text" size="3" name="item[{{ item.getName() }}-{{ sizeprice.getSize() }}]"/></td>
        		</tr>
        		{% endfor %}
