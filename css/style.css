@@ -66,3 +66,7 @@ nav ul {
 nav ul li {
     margin: 5px 0;
 }
+
+nav ul li:last-child {
+    margin-top: 20px;
+}

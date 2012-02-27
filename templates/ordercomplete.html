@@ -10,22 +10,28 @@
     </head>
     <body>
     	<div id="main">
+    	<div id="main">
 	    	<img src="images/logo.png" style="right: 300px; float: right;"/>
-	    	<h1 style="height: 150px;">RaumZeitLabor Merchandise</h1><br/>
+	    	<h1 style="padding-top: 55px; height: 95px;">Merchandise</h1><br/>
 <pre>
-Du hast jetzt erfolgreich tolle Dinge bestellt!<br/>
+Vielen Dank! Du hast jetzt erfolgreich folgende tolle Dinge bestellt:<br/>
 
 Name: {{ name }}
 Mail: {{ email }}
-			
+
 Bestellung:<br/>
-			
+
 {% for item in items %}
 {{ item.amount }} x {{ item.name }}
 {% endfor %}
-			
+
 Kommentare:<br/>
 {{ comments }}</pre>
+
+            <p>Wir danken dir, dass du das RaumZeitLabor auf diesem Wege
+            unterstützt und wünschen dir vorab schon einmal viel Spaß mit den
+            Sachen!</p>
+
 	    </div>
     </body>
 </html>
