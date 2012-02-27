@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    	<script type="text/javascript" src="js/check.js"></script>
+        <title>RaumZeitLabor Merchandise</title>
+        <link href="css/main.css" rel="stylesheet" type="text/css" />
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+        <link href='http://fonts.googleapis.com/css?family=Anonymous+Pro:400,700' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+    	<div id="main">
+	    	<img src="images/logo.png" style="right: 300px; float: right;"/>
+	    	<h1 style="height: 150px;">RaumZeitLabor Merchandise</h1><br/>
+<pre>
+Du hast jetzt erfolgreich tolle Dinge bestellt!<br/>
+
+Name: {{ name }}
+Mail: {{ email }}
+			
+Bestellung:<br/>
+			
+{% for item in items %}
+{{ item.amount }} x {{ item.name }}
+{% endfor %}
+			
+Kommentare:<br/>
+{{ comments }}</pre>
+	    </div>
+    </body>
+</html>
