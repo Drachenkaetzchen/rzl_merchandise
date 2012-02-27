@@ -61,10 +61,12 @@ p {
 
 a:visited, a:link {
     color: #000;
+    text-decoration: none;
 }
 
 a:active {
     color: #444;
+    text-decoration: none;
 }
 
 nav ul {
@@ -77,4 +79,8 @@ nav ul li {
 
 nav ul li:last-child {
     margin-top: 20px;
+}
+
+#item h1 {
+    margin-top: 0;
 }
