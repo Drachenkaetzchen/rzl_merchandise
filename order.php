@@ -32,7 +32,7 @@ flush();
 
 $mailtext = $twig->render('mailtemplate.txt', $variables);
 
-$headers .= "MIME-Version: 1.0\r\n";
+$headers = "MIME-Version: 1.0\r\n";
 $headers .= "Content-type: text/plain; charset=utf-8\r\n";
 $headers .="Content-Transfer-Encoding: 8bit";
 
