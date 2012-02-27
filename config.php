@@ -49,7 +49,7 @@ $items[] = $item;
 
 $item = new Item();
 $item->setName("Zipper");
-$item->setDescription(	"Wer mag es nicht, das flauschige Allwetterkleidungsstück für den Durchschnittsnerd. " .
+$item->setDescription(	"Wer mag es nicht, das flauschige Allwetterkleidungsstück für den Nerd von heute. " .
                         "\n\nAuf Wunsch mit eigenem Schriftzug.");
 $item->setImage("zipper.jpg");
 $item->addSizePrice(new SizePrice("XXL", 35.00));
