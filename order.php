@@ -27,4 +27,8 @@ $twig->display('ordercomplete.html', $variables);
 
 $mailtext = $twig->render('mailtemplate.txt', $variables);
 
-mail("felicitus@felicitus.org", "RZL-Merchandise-Shop Bestellung", $mailtext);
+$headers .= "MIME-Version: 1.0\r\n";
+$headers .= "Content-type: text/plain; charset=utf-8\r\n";
+$headers .="Content-Transfer-Encoding: 8bit";
+
+mail("felicitus@felicitus.org", "RZL-Merchandise-Shop Bestellung", $mailtext, $headers);
