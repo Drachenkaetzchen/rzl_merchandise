@@ -28,6 +28,7 @@ $variables["comments"] = $_REQUEST["comments"];
 $variables["items"] = $orderItems;
 
 $twig->display('ordercomplete.html', $variables);
+flush();
 
 $mailtext = $twig->render('mailtemplate.txt', $variables);
 
