@@ -59,6 +59,14 @@ p {
     text-align: justify;
 }
 
+a:visited, a:link {
+    color: #000;
+}
+
+a:active {
+    color: #444;
+}
+
 nav ul {
     list-style-image: url(../images/plug.png);
 }
