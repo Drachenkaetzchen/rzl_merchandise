@@ -39,4 +39,4 @@ $headers .="Content-Transfer-Encoding: 8bit";
 // targetMails is defined in config.php, gets appended with the order person's mail
 $targetMails[] = $_REQUEST["email"];
 
-mail($targetMails, "RZL-Merchandise-Shop Bestellung", $mailtext, $headers);
+mail(implode(",",$targetMails), "RZL-Merchandise-Shop Bestellung", $mailtext, $headers);
