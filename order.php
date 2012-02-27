@@ -18,7 +18,7 @@ $orderItems = array();
 
 foreach ($_REQUEST["item"] as $key => $value) {
 	if ($value !== "") {
-		$orderItems[] = array("name" => mb_str_pad($key, 35), "amount" => mb_str_pad($value,4));
+		$orderItems[] = array("name" => mb_str_pad($key, 40), "amount" => mb_str_pad($value,4));
 	}
 }
 

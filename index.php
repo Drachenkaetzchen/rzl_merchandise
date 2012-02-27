@@ -1,4 +1,6 @@
 <?php
+declare(encoding='UTF-8');
+
 require_once 'Twig/Autoloader.php';
 Twig_Autoloader::register();
 
