@@ -3,7 +3,7 @@ $items = array();
 
 $item = new Item();
 $item->setName("LabCoat");
-$item->setDescription(	"Das Pflichtprogramm für jeden Laboraten! Ein bestickter Labcoat aus reiner ".
+$item->setDescription(	"Das Pflichtprogramm für jeden Laboranten! Ein bestickter Labcoat aus reiner ".
                         "Baumwolle, der auch wunderbar für Ätzsessions geeignet ist. Die Bestickung wird ".
                         "von unseren Fachkräften Unicorn oder Inte mittels unserer programmierbaren Stickmaschine ".
                         "vorgenommen.\n\nDas RaumZeitLabor empfiehlt: Vor der Bestellung am Besten die ".
