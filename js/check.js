@@ -1,6 +1,6 @@
 function checkForm () {
 	if (document.getElementById("name").value.length < 5) {
-		alert("Bitte gib deinen Namen an");
+		alert("Bitte gib deinen Namen an (mindestens 5 Zeichen)");
 		return false;
 	}
 	
