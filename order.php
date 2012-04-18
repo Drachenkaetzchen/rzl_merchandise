@@ -28,16 +28,30 @@ $variables["email"] = $_REQUEST["email"];
 $variables["comments"] = $_REQUEST["comments"];
 $variables["items"] = $orderItems;
 
-$twig->display('ordercomplete.html', $variables);
-flush();
+$messages = array();
 
-$mailtext = $twig->render('mailtemplate.txt', $variables);
+if (strlen($variables["name"]) < 5) {
+	$messages[] = "Dein Name muß mindestens 5 Zeichen betragen.";
+}
 
-$headers = "MIME-Version: 1.0\r\n";
-$headers .= "Content-type: text/plain; charset=utf-8\r\n";
-$headers .="Content-Transfer-Encoding: 8bit";
+if (strlen($variables["email"]) < 5) {
+	$messages[] = "Deine E-Mail muß mindestens 5 Zeichen betragen.";
+}
 
-// targetMails is defined in config.php, gets appended with the order person's mail
-$targetMails[] = $_REQUEST["email"];
-
-mail(implode(",",$targetMails), "RZL-Merchandise-Shop Bestellung", $mailtext, $headers);
+if (count($messages) > 0) {
+	$twig->display('invaliddata.html', array("messages" => $messages));
+} else {
+	$twig->display('ordercomplete.html', $variables);
+	flush();
+	
+	$mailtext = $twig->render('mailtemplate.txt', $variables);
+	
+	$headers = "MIME-Version: 1.0\r\n";
+	$headers .= "Content-type: text/plain; charset=utf-8\r\n";
+	$headers .="Content-Transfer-Encoding: 8bit";
+	
+	// targetMails is defined in config.php, gets appended with the order person's mail
+	$targetMails[] = $_REQUEST["email"];
+	
+	mail(implode(",",$targetMails), "RZL-Merchandise-Shop Bestellung", $mailtext, $headers);
+}

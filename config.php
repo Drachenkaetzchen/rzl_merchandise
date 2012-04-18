@@ -5,7 +5,7 @@ $item = new Item();
 $item->setName("LabCoat");
 $item->setDescription(	"Das Pflichtprogramm für jeden Laboranten! Ein bestickter Labcoat aus reiner ".
                         "Baumwolle, der auch wunderbar für Ätzsessions geeignet ist. Die Bestickung wird ".
-                        "von unseren Fachkräften Unicorn oder Inte mittels unserer programmierbaren Stickmaschine ".
+                        "von unseren Fachkräften Unicorn, silsha oder Inte mittels unserer programmierbaren Stickmaschine ".
                         "vorgenommen.\n\nDas RaumZeitLabor empfiehlt: Vor der Bestellung am Besten die ".
                         "passende Größe vor Ort ausprobieren!" );
 $item->setImage("labcoat.jpg");
