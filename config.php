@@ -9,13 +9,17 @@ $item->setDescription(	"Das Pflichtprogramm für jeden Laboranten! Ein bestickte
                         "vorgenommen.\n\nDas RaumZeitLabor empfiehlt: Vor der Bestellung am Besten die ".
                         "passende Größe vor Ort ausprobieren!" );
 $item->setImage("labcoat.jpg");
-//$item->addSizePrice(new SizePrice("64", 35.00));
+$item->addSizePrice(new SizePrice("64", 35.00));
 $item->addSizePrice(new SizePrice("62", 35.00));
+$item->addSizePrice(new SizePrice("60", 35.00));
+$item->addSizePrice(new SizePrice("58", 35.00));
 $item->addSizePrice(new SizePrice("56", 35.00));
 $item->addSizePrice(new SizePrice("54", 35.00));
 $item->addSizePrice(new SizePrice("52", 35.00));
+$item->addSizePrice(new SizePrice("50", 35.00));
 $item->addSizePrice(new SizePrice("48", 35.00));
-//$item->addSizePrice(new SizePrice("44", 35.00));
+$item->addSizePrice(new SizePrice("46", 35.00));
+$item->addSizePrice(new SizePrice("44", 35.00));
 
 $items[] = $item;
 
