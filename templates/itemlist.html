@@ -17,7 +17,7 @@
        		<tr>
        			<td>{{ sizeprice.getSize() }}</td>
        			<td>{{ "%.2f"|format(sizeprice.getPrice()) }} &euro;</td>
-       			<td><input type="text" size="3" name="item[{{ item.getName() }}-{{ sizeprice.getSize() }}]"/></td>
+       			<td><input type="number" size="3" name="item[{{ item.getName() }}-{{ sizeprice.getSize() }}]" autocomplete="off" /></td>
        		</tr>
        		{% endfor %}
        	</table>
