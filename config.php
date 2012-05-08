@@ -87,5 +87,26 @@ $item->addSizePrice(new SizePrice("S", 20.00));
 
 $items[] = $item;
 
+$item = new Item();
+$item->setName("Bausatz usbasp");
+$item->setDescription(	"Der usbasp-Bausatz mit allen benötigten Bauteilen. Must-have für den Einstieg in die Atmel-".
+		"Programmierung. Mehr Info unter " .
+		'<a target="_blank" href="http://rzl.so/wiki/usbasp">rzl.so/wiki/usbasp</a>');
+$item->setImage("usbasp.jpg");
+$item->addSizePrice(new SizePrice("Standardkit", 10.00));
+$item->addSizePrice(new SizePrice("Mit schwarzer Platine", 12.00));
 
-$targetMails = array("vorstand@raumzeitlabor.de", "mail@oliverknapp.de");
+$items[] = $item;
+
+$item = new Item();
+$item->setName("Bausatz ISP-Adapter");
+$item->setDescription(	"Ein einfacher Adapter, der die Adaptierung von 10-poligem ISP-Konnektor auf 6-poligen erlaubt." .
+		"Die einzelnen Pins sind auch als Stiftleiste herausgeführt. Inklusive 30cm langem 6-pol Flachbandkabel und den " .
+		"benötigten Steckern. Mehr Info unter ".
+		'<a target="_blank" href="http://rzl.so/wiki/ISP-Adapter">rzl.so/wiki/ISP-Adapter</a>');
+$item->setImage("isp-adapter.jpg");
+$item->addSizePrice(new SizePrice("Standardkit", 4.00));
+
+$items[] = $item;
+
+$targetMails = array("vorstand@raumzeitlabor.de", "mail@oliverknapp.de", "felicitus@felicitus.org");
