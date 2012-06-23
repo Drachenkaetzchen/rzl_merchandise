@@ -109,4 +109,21 @@ $item->addSizePrice(new SizePrice("Standardkit", 4.00));
 
 $items[] = $item;
 
+$item = new Item();
+$item->setName("Raspberry Pi-Gehäuse");
+$item->setDescription(	"Das Raspberry Pi-Gehäuse nach Vorlage von AdaFruit.<br/><br/>Das Gehäuse ist vollständig ".
+						"geschlossen, kann aber optional ohne die obere Platte zusammengebaut werden, um an die Pins ".
+						"zu gelangen. Der GPIO-Header kann auch herausgeführt werden, wenn das Gehäuse vollständig ".
+						"zusammengebaut wurde.<br/><br/>".
+						"Das Gehäuse wird vom FaZzZ0r-Meister gelasert und besteht aus 2mm dickem weißen Acryl. ".
+						"Andere Farben gerne auch, wenn du eine Acrylplatte (15x20cm, Dicke 2mm oder 3mm) in deiner ".
+						"Wunschfarbe mitbringst.".
+						"<br/><br/>Mehr Infos unter:<br/>".
+                		'<a target="_blank" href="http://youtu.be/wyHudYAOVRY">Zusammenbau-Video</a>');
+$item->setImage("rpi-case.jpg");
+$item->addSizePrice(new SizePrice("Standardkit", 15.00));
+
+$items[] = $item;
+
+
 $targetMails = array("vorstand@raumzeitlabor.de", "mail@oliverknapp.de", "felicitus@felicitus.org");
